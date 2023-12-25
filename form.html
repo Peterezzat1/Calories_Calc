@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        h1:hover{
+          
+            cursor:pointer;
+        }
+
+        label{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #secondname{
+            width:145px;
+        }
+        #address{
+            width:190px;
+        }
+
+        input{
+            border-radius: 10px ;
+         
+          outline: 0cm;
+       
+        }
+     
+        #the_form{
+            margin: 40px 510px;
+        }
+        button{
+            border-radius: 20px;
+            width: 230px;
+            height: 30px;
+            background-color: black;
+            color:white;
+            margin: 20px;
+        }
+        button:hover{
+        background-color: red;
+        color:white;
+        cursor: pointer;
+        }
+
+        #VIP{
+            background-color: black;
+            color:white;
+            border-radius: 20px;
+            width:fit-content; width:-webkit-fit-content; width:-moz-fit-content;
+            height: 22px;
+            padding: 15px;
+            margin: 40px 580px;
+            cursor: pointer;
+          
+        }
+       
+    </style>
+</head>
+<body>
+ 
+    <h1 onclick="the_sweet_alert();" style=" text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> Online training</h1>
+    <form action="index.html" method="get">
+<div id="the_form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  >
+        <br><br>
+        <label for="height"> Height:</label>
+        <input type="text" id="height" name="height"  >
+        <br><br>
+        <label for="weight">Weight</label>
+        <input type="text" name="weight" id="weight"  >
+        <br><br>
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age"  >
+        <br>
+        <label for="days">Days Of Trraing</label>
+        <input type="text" name="days" id="days"  >
+        <br><br>
+        <button id="btntest" name="btntest" type="submit">Send</button>
+    </div>
+ 
+    </form>
+
+    <div id="VIP">
+        <a onclick="popup2();">Click To Read it!</a>
+    </div>
+
+    <script>
+       function the_sweet_alert(){
+ 
+        swal("Hello This is the main form youn should register 🙂✔");
+       }
+    
+    </script>
+ 
+</body>
+</html>
